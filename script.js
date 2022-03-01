@@ -24,6 +24,13 @@ SOFTWARE.
 
 'use strict';
 
+const $ = document.querySelector.bind(document);
+
+//AutoPlaymusic
+function playmusic() {
+    $('.autoplay').play();
+}
+
 // Mobile promo section
 
 const promoPopup = document.getElementsByClassName('promo')[0];
