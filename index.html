@@ -21,6 +21,8 @@
         <meta property="og:url" content="https://paveldogreat.github.io/WebGL-Fluid-Simulation/">
         <meta property="og:image" content="https://paveldogreat.github.io/WebGL-Fluid-Simulation/logo.png">
 
+        <link href="https://fonts.googleapis.com/css?family=Cinzel|Lato:100,300,700&display=swap&subset=latin-ext" rel="stylesheet">
+
         <script type="text/javascript" src="dat.gui.min.js"></script>
         <style>
             @font-face {
@@ -28,9 +30,9 @@
                 src: url('iconfont.ttf') format('truetype');
             }
 
-            * {
+            /* * {
                 user-select: none;
-            }
+            } */
 
             html, body {
                 overflow: hidden;
@@ -191,27 +193,66 @@
 
 
             /* Style */
-            .title {
+            .title,
+            .link,
+            .info {
                 color: #fff;
                 font-family: Lato,sans-serif;
                 font-size: 14.4px;
-                letter-spacing: 0.05rem;
+                letter-spacing: 0.1rem;
                 text-align: center;
                 opacity: 0.7 !important;
 
 
                 position: absolute;
                 width: 380px;
-                top: 35%;
+                top: 42%;
                 left: 50%;
                 transform: translate(-50%, -50%);
+            }
+
+            .info {
+                top: 30%;
+                font-family: Cinzel,serif;
+                font-size: 1.9em;
+                letter-spacing: .35em;
+                
+            }
+
+            .info .info-job {
+                font-size: 14.4px;
+                letter-spacing: .5em;
+            }
+
+            .info-sub {
+                font-size: 10px;
+                letter-spacing: .15em;
+
+            }
+
+            .link {
+                display: flex;
+                top: 50%;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .link-item {
+                width: 13%;
+                padding-right: 15px;
+                
+            }
+
+            .link-item img {
+                width: 100%;
             }
 
             .copyright {
                 color: #fff;
                 font-family: Lato,sans-serif;
                 font-size: 14.4px;
-                letter-spacing: 0.05rem;
+                letter-spacing: 0.1rem;
                 text-align: center;
                 opacity: 0.7 !important;
 
@@ -232,13 +273,33 @@
     <body>
         <canvas></canvas>
 
-        <div class="title">
-            Forget the troubles in life
-            <div style="margin-top: 20px;">Touch me. My heart. Use it to create a colorful world</div>
+        <div class="info">
+            <div class="info-name">NGOC LE</div>
+            <div class="info-job">FRONTEND DEVELOPER</div>
+            <div class="info-sub">Mobile & Web</div>
+        </div>
+
+        <div class="title" style="font-size: 12.4px;">
+            Forget the troubles in life.
+            Touch me. My heart. Use it to create a colorful world</div>
+        </div>
+
+        <div class="link"> 
+            <div class="link-item">
+                <img src="./facebook.png" alt="">
+            </div>
+            <div class="link-item">
+                <img src="./instagram.png" alt="">
+            </div>
+            <div class="link-item">
+                <img src="./github.png" alt="">
+            </div>
+            
+            
         </div>
 
         <div class="copyright">
-            <div style="font-size: 12px; margin-bottom: 10px;">Guide: Touch or swipe the screen and do whatever you want <br>
+            <div style="font-size: 9px; margin-bottom: 10px;">Guide: Touch or swipe the screen and do whatever you want <br>
                 Best used for Safari, Chrome, Edge
             </div>
             @2022 Designed by ngocle
